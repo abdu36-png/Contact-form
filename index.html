@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+  <script defer src="app.js"></script>
+ 
+</head>
+<body>
+
+  
+  <main class="container">
+    <fieldset id="fieldset">
+  <legend><h1>Contact Us</h1></legend>
+
+  <header>
+    <section>
+        <label for="first-name"><p>First Name *</p></label>
+  <input type="text" id="first-name" name="first-name" autocomplete="name" required aria-invalid="true" aria-describedby="error-message one">
+    <span class="error-message" id="one">This field is required</span>
+    </section>
+
+
+
+    <section>
+        <label for="last-name"><p>Last Name *</p></label>
+        <input type="text" id="last-name" name="last-name" autocomplete="name" required aria-invalid="true" aria-describedby="error-message two">
+        <span class="error-message" id="two">This field is required</span>
+    </section>
+
+    </header>
+
+
+  <section>
+     <label for="email"><p>Email Address *</p></label>
+  <input type="email" name="email" id="email" autocomplete="email" required aria-invalid="true" aria-describedby="error-message three">
+  <span class="error-message" id="three">Please enter a valid email address</span>
+  </section>
+ 
+
+  <label for="Query Type"><p>Query Type *</p></label>
+
+
+  <article>
+<section class="diff">
+ <label for="General">
+    <input type="radio" name="query" value="General" id="check1" required>
+    <p>General Enquiry</p>
+  </label>
+</section>
+
+
+  <section class="diff">
+    <label for="Support">
+    <input type="radio" name="query" value="Support" id="check2" required>
+    <p>Support Request</p>
+      
+  </label>
+
+  
+ </section>
+  
+</article>
+<span class="error-message" id="four">Please select a query type</span>
+ 
+  
+
+
+   <p>Message *</p>
+  <textarea name="Message" id="message" required aria-label="message" aria-invalid="true"></textarea>
+  <span class="error-message" id="five">This field is required</span>
+
+  <label class="last" for="checkbox">
+    <input type="checkbox" id="checkbox" required>
+     <p>I consent to being contacted by the team *</p>
+  </label>
+ <span class="error-message" id="six">To submit this form, please consent to being contacted</span>
+
+  <button id="btn">Submit</button>
+
+
+  </fieldset>
+</main>
+<header class="fi-one" id="fi-one" aria-live="polite" aria-atomic="true">
+    <div class="title"><img src="icon-success-check.svg" alt="success-check"><h2>Message Sent!</h2></div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </header>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
