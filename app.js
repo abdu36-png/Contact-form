@@ -73,6 +73,7 @@ btn.addEventListener('click', (e) => {
     if (hasError) {
         e.preventDefault();
     } else if (!hasError) {
+        e.preventDefault();
       setInterval( () => {
         document.getElementById('fi-one').style.display = 'flex';
       }, 1000);
@@ -80,5 +81,6 @@ btn.addEventListener('click', (e) => {
       clearInterval()
     }
 })
+
 
 
